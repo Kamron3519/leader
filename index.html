@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Open Sans";
+        }
+        body{
+            text-align: center;
+        }
+        img{
+            width: 100%;
+            height: 500px;
+            padding: 20px 40px;
+        }
+        p{
+            max-width: 800px;
+            margin: auto;
+            text-align: justify;
+            padding: 0 40px;
+        }
+        .loader-container{
+            width: 100%;
+            height: 100vh;
+            background: black;
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .loader{
+            width: 50px;
+            height: 50px;
+            border: 5px solid;
+            color: rgb(3, 255, 171);
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: anim 1.5s linear infinite;
+        }
+        @keyframes anim{
+            25%{
+                color: #aaff00;
+            }
+            50%{
+                color: #026813;
+            }
+            75%{
+                color: rgb(204, 0, 255);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+    <img src="bg.jpg" alt="">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste accusamus molestias temporibus modi at repudiandae iusto obcaecati ab nemo placeat deserunt neque consequatur, animi debitis nobis. Dicta dignissimos praesentium corporis est omnis perferendis tenetur, expedita labore aperiam consequatur harum error saepe temporibus. At ex esse cupiditate unde magni repellat? Asperiores error sit nam soluta. Rem, voluptatibus. Illo voluptas corrupti hic error repudiandae dolores ex, sapiente officiis expedita natus reprehenderit asperiores quas. Assumenda in doloremque possimus aut necessitatibus, eum ipsa reprehenderit natus dolorum alias saepe quod inventore dolores! Magnam totam ex at, veniam nihil molestias optio corrupti consequuntur qui possimus aut modi id aspernatur maiores iste ratione quasi illo eius autem odit labore? Consequatur doloremque voluptatem quis, ex iure maxime earum impedit, saepe odio aliquam vel praesentium necessitatibus animi eius facere non ad placeat voluptates. Eaque, dignissimos expedita. Similique dicta dignissimos deleniti sit eligendi impedit neque nam! Ab illum aperiam ducimus perspiciatis tempora accusamus, quibusdam exercitationem maxime molestiae voluptas ea dolores voluptate a esse libero aspernatur voluptatem nam saepe tenetur ex quisquam, eius eaque labore! Delectus suscipit dicta facere sit quos nam, dolorum dignissimos cumque totam omnis est adipisci deleniti impedit sunt molestiae ea in, praesentium ut libero! Dolorum inventore, officiis porro neque asperiores beatae ipsum odio sequi tenetur obcaecati maiores! Odio distinctio, quasi ducimus exercitationem voluptate aperiam aut autem ullam non modi hic sapiente beatae vero vitae iusto obcaecati quisquam repellat explicabo dolorem fugiat, voluptatem rem dolores enim nobis? Adipisci pariatur ex ipsam suscipit voluptatem omnis tenetur explicabo harum facilis!</p>
+    <script>
+        $(window).on("load",function(){
+             $(".loader-container").fadeOut(1500);
+        });
+    </script>
+</body>
+</html>
